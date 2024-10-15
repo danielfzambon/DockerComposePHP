@@ -1,11 +1,11 @@
-drop table if exists `users`;
-    create table `users` (
+drop table if exists `produtos`;
+
+    create table `produtos` (
         id int not null auto_increment,
-        username text not null,
-        password text not null,
+        nome text not null,
+        quantidade int not null,
         primary key (id)
     );
-    insert into `users` (username, password) values
-        ("admin","password"),
-        ("Alice","this is my password"),
-        ("Job","12345678");
+
+INSERT INTO `produtos` (nome, preco, quantidade) 
+VALUES ('Notebook Dell', 3500.00, 10);
